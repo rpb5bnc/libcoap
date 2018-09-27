@@ -126,7 +126,7 @@ test -n "$srcdir" || srcdir=.
 mkdir -p $srcdir/m4
 
 echo "Generating needed autotools files for $PROJECT by running autoreconf ..."
-autoreconf --force --install --verbose "$srcdir"
+autoreconf --warnings=all --force --install --verbose "$srcdir"
 
 echo
 echo "You can now run 'configure --help' to see possible configuration options."
